@@ -53,8 +53,22 @@ button {
   cursor: pointer;
 }
 
+#zerar {
+  background-color: #dbd81f;
+}
+
+#zerar:hover {
+  background-color: #868404e1;
+}
+
 button:hover {
   background-color: #45a049;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px;
 }
 
 #resultado-container {

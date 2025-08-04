@@ -4,6 +4,14 @@ function calcularImc () {
     let nome = document.getElementById("nome").value;
     let idade = document.getElementById("idade").value;
     
+    if (
+    verificaCampoVazio(nome) ||
+    verificaCampoVazio(idade) ||
+    verificaCampoVazio(peso) ||
+    verificaCampoVazio(altura)
+    ) {
+        return;
+    }
 
     let imc = peso / (altura * altura);
     imc = parseFloat(imc.toFixed(1));
@@ -49,5 +57,32 @@ function calcularImc () {
 function exibirMensagem (tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto
+}
+
+function verificaCampoVazio (campo) {
+    if (campo == ""){
+        alert(`Preencha todos os campos em vazio`);
+        return true;
+    }
+    return false;
+}
+
+function zerar() {
+    document.getElementById("altura").value = "";
+    document.getElementById("peso").value = "";
+    document.getElementById("nome").value = "";
+    document.getElementById("idade").value = "";   
+
+    document.getElementById("sexo-m").checked = false;
+    document.getElementById("sexo-f").checked = false;
+
+    document.getElementById("resultado").innerHTML = "";    
+    
+    
+    // Remove destaque das classificações
+    const ids = ["magreza", "normal", "sobrepeso", "obesidade1", "obesidade2", "obesidade3"];
+    ids.forEach(id => {
+        document.getElementById(id).classList.remove("destacado-vermelho", "destacado-verde");
+    });
 }
 
