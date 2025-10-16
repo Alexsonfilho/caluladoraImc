@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="cabecalho">
+      <h1 class="cabecalho-titulo">Índice de massa corporal</h1>
+      <ul class="lista-duvidas">
+        <li class="lista-duvidas-item">
+          <button class="lista-item-botao" id="duvida-01">O que é IMC?</button>
+        </li>
+        <li class="lista-duvidas-item">
+          <button class="lista-item-botao" id="duvida-02">Como fazer o cálculo?</button>
+        </li>
+        <li class="lista-duvidas-item">
+          <button class="lista-item-botao" id="duvida--03">É o mesmo para crianças e adultos?</button>
+        </li>
+      </ul>
+    </header>
+
+    <section class="apresentacao">
+
+    </section>
+
+
+
     <div class="container">
     <h2>Calculadora de IMC</h2>
     
@@ -41,8 +62,8 @@
     </form>
     
     <div class="botoes">
-    <button onclick="calcularImc()" type="submit" id="calcular">Calcular</button>
-    <button onclick="zerar()" type="submit" id="zerar">Zerar</button>
+    <button class="botoes-form" onclick="calcularImc()" type="submit" id="calcular">Calcular</button>
+    <button class="botoes-form"  onclick="zerar()" type="submit" id="zerar">Zerar</button>
     </div>
 
     <div id="resultado-container">
