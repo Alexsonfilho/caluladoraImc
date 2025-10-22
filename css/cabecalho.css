@@ -1,0 +1,47 @@
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 4%;
+  background-color: rgba(212, 206, 206, 0.7);
+  position: fixed;
+  transition: 1s;
+  top: 0;
+  left: 0;
+}
+
+.rolagem{
+  background-color: rgba(212, 206, 206, 0.7);
+}
+
+
+.cabecalho-titulo {
+  text-align: center;
+  padding-top: 0.5em
+}
+
+.cabecalho-titulo-some {
+  display: none;
+}
+
+.lista-duvidas {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+}
+
+.lista-duvidas-item {
+  list-style: none;
+}
+
+.lista-item-botao {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+}
+
+.lista-item-botao:hover {
+  color: rgb(151, 30, 30);
+}
+

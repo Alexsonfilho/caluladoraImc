@@ -1,3 +1,5 @@
+@import url("css/cabecalho.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,43 +12,6 @@ body {
   
 }
 
-.cabecalho {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px 4%;
-  background-color: rgba(212, 206, 206, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.cabecalho-titulo {
-  text-align: center;
-  padding-top: 0.5em
-}
-
-.lista-duvidas {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 10px;
-}
-
-.lista-duvidas-item {
-  list-style: none;
-}
-
-.lista-item-botao {
-  border: none;
-  background-color: transparent;
-  color: #000000;
-}
-
-.lista-item-botao:hover {
-  color: rgb(151, 30, 30);
-}
-
 .apresentacao {
   height: 100vh;
   background-image: url('/imagens/saudavel.jpeg');
@@ -55,8 +20,6 @@ body {
   background-repeat: no-repeat;
   
 }
-
-
 
 .container {
   max-width: 500px;
