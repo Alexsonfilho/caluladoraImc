@@ -44,6 +44,14 @@ function alterarConteudo (conteudo) {
             imcConteudo.innerHTML= `
             <h2>Como Fazer o Calculo?</h2>
             <p class="imc-paragrafo">O cálculo do IMC é feito usando a seguinte fórmula: peso (kg) ÷ (altura x altura) (m).</p>
+            <p class="imc-paragrafo">Para calcular o IMC, deve-se:</p>
+            <ul>
+                <li class="item-lista"><strong>Pesar a pessoa</strong> e anotar o peso em Kg;</li>
+                <li class="item-lista"><strong>Medir a altura</strong> em metros;</li>
+                <li class="item-lista"><strong>Elevar a altura ao quadrado</strong>, ou seja, multiplicar por ela mesma;</li>
+                <li class="item-lista"><strong>Dividir o peso pela altura ao quadrado;</strong></li>
+                <li class="item-lista"><strong>Classificar o resultado do IMC</strong> a partir do valor obtido.</li>
+            </ul>
             `
             
             break;

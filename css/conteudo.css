@@ -17,6 +17,9 @@
     box-shadow: 8px 8px 8px 8px var(--sombra);
 }
 
-.active {
-    background-color: aliceblue;
+
+
+.item-lista {
+    margin-top: 0.5em;
+    line-height: 1.0;
 }
