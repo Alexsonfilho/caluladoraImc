@@ -1,4 +1,17 @@
 @import url("css/cabecalho.css");
+@import url("css/conteudo.css");
+:root {
+  --cor-de-fundo: #f7f7f7; 
+  --verde-escuro: #45a049;
+  --verde-claro: #4CAF50;
+  --amarelo-claro: #dbd81f;
+  --amarelo-escuro: #868404e1;
+  --azul: #2493bd;
+  --vermelho: #ff0000;
+  --sombra: rgba(12, 11, 11, 0.15);
+}
+
+
 
 * {
   margin: 0;
@@ -8,7 +21,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo);
   
 }
 
@@ -62,7 +75,7 @@ input[type="number"] {
 .botoes-form {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: var(--verde-escuro);
   color: white;
   font-size: 16px;
   border: none;
@@ -71,15 +84,15 @@ input[type="number"] {
 }
 
 #zerar {
-  background-color: #dbd81f;
+  background-color: var(--amarelo-claro);
 }
 
 #zerar:hover {
-  background-color: #868404e1;
+  background-color: var(--amarelo-escuro);
 }
 
 .botoes-form:hover {
-  background-color: #45a049;
+  background-color: var(--verde-claro);
 }
 
 .botoes {
@@ -107,7 +120,7 @@ input[type="number"] {
     }
 
     th {
-      background-color: #2493bd;
+      background-color: var(--azul);
       color: white;
     }
     th, td {
@@ -121,7 +134,7 @@ input[type="number"] {
     }
 
     tr.destacado-verde {
-      background-color: #4caf50;
+      background-color: var(--verde-claro);
       color: white;
       font-weight: bold;
     }
