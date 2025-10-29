@@ -36,6 +36,7 @@
 }
 
 .lista-item-botao {
+  text-decoration: none;
   border: none;
   background-color: transparent;
   color: #000000;
