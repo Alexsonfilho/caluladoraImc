@@ -1,0 +1,26 @@
+.imc {
+    display: flex;
+    align-items: center;
+    padding: 5em 0;
+    margin: 0 8vw 0 8vw;
+}
+
+.imc-paragrafo {
+    margin-top: 1em;
+    line-height: 1.6; /*altura da linha */
+    text-align: justify;
+}
+
+.imc-img {
+    width: 45%;
+    margin-left: 2em;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px 8px var(--sombra);
+}
+
+
+
+.item-lista {
+    margin-top: 0.5em;
+    line-height: 1.0;
+}

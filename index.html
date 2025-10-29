@@ -11,19 +11,34 @@
       <h1 class="cabecalho-titulo">Índice de massa corporal</h1>
       <ul class="lista-duvidas">
         <li class="lista-duvidas-item">
-          <button class="lista-item-botao" id="duvida-01">O que é IMC?</button>
+          <a href="#conteudo-duvida" class="lista-item-botao" id="duvida-01">O que é IMC?</a>
         </li>
         <li class="lista-duvidas-item">
-          <button class="lista-item-botao" id="duvida-02">Como fazer o cálculo?</button>
+          <a href="#conteudo-duvida" class="lista-item-botao" id="duvida-02">Como Fazer o cálculo?</a>
         </li>
         <li class="lista-duvidas-item">
-          <button class="lista-item-botao" id="duvida--03">É o mesmo para crianças e adultos?</button>
+          <a href="#conteudo-duvida" class="lista-item-botao" id="duvida-03">Como melhorar o IMC?</a>
         </li>
       </ul>
     </header>
 
-    <section class="apresentacao">
+    <section class="apresentacao"></section>
 
+    <section class="conteudo" id="conteudo-duvida"> 
+      <div class="imc">
+
+        <div class="imc-conteudo">
+          <h2 class="imc-titulo">O que é IMC?</h2>
+
+          <p class="imc-paragrafo ">O IMC, ou Índice de Massa Corporal, é uma ferramenta usada por profissionais da saúde para estimar a quantidade de gordura corporal a partir da avaliação da relação entre peso e altura. O IMC serve como uma avaliação inicial para verificar se a pessoa está no peso adequado ou se está acima ou abaixo do peso ideal.</p>
+
+          <p class="imc-paragrafo ">Apesar de ser uma ferramenta prática e muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva em consideração a proporção entre músculo e gordura, a distribuição de gordura no corpo e o condicionamento físico da pessoa.</p>
+
+          <p class="imc-paragrafo ">Por isso, os resultados do IMC devem ser interpretados com precaução e sempre com o acompanhamento de um profissional. No caso de pessoas com muita massa muscular, como os atletas, outras técnicas podem ser mais adequadas.</p>
+        </div>
+
+        <img class="imc-img" src="imagens/duvida-01.png" alt="Imc">
+      </div>
     </section>
 
 
@@ -109,6 +124,7 @@
   </div>
 
   <script src="scripts/cabecalho.js"></script>
+  <script src="scripts/alternarConteudo.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 }
 
 .rolagem{
-  background-color: rgba(212, 206, 206, 0.7);
+  background-color: white;
 }
 
 
@@ -36,12 +36,19 @@
 }
 
 .lista-item-botao {
+  text-decoration: none;
   border: none;
   background-color: transparent;
   color: #000000;
 }
 
 .lista-item-botao:hover {
-  color: rgb(151, 30, 30);
+  color: var(--azul-escuro);
 }
 
+.active {
+    color: white;
+    background-color: var(--azul);
+    border-radius: 8px;
+    padding: 3px 10px;
+}
