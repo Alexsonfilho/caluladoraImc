@@ -42,86 +42,91 @@
     </section>
 
 
+    <section class="calculadora">
+      <div class="container">
+      <h2>Calcular Imc:</h2>
+      
+      <form id="form-imc">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required>
+        </div>
+
+        <div class="form-group">
+          <label>Sexo:</label>
+          <div class="sexo-options">
+            <label><input type="radio" name="sexo" id="sexo-m" value="masculino" required> Masculino</label>
+            <label><input type="radio" name="sexo" id="sexo-f" value="feminino"> Feminino</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="peso">Peso (kg):</label>
+          <input type="number" id="peso" name="peso" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="altura">Altura (m):</label>
+          <input type="number" id="altura" name="altura" step="0.01" required>
+        </div>
+      </form>
+      
+      <div class="botoes">
+      <button class="botoes-form" onclick="calcularImc()" type="submit" id="calcular">Calcular</button>
+      <button class="botoes-form"  onclick="zerar()" type="submit" id="zerar">Zerar</button>
+      </div>
+
+    </div>
 
     <div class="container">
-    <h2>Calculadora de IMC</h2>
-    
-    <form id="form-imc">
-      <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+      <div id="resultado-container">
+        <h3>Resultado:</h3>
+        <p id="resultado"></p>
       </div>
 
-      <div class="form-group">
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" required>
-      </div>
-
-      <div class="form-group">
-        <label>Sexo:</label>
-        <div class="sexo-options">
-          <label><input type="radio" name="sexo" id="sexo-m" value="masculino" required> Masculino</label>
-          <label><input type="radio" name="sexo" id="sexo-f" value="feminino"> Feminino</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" name="peso" step="0.1" required>
-      </div>
-
-      <div class="form-group">
-        <label for="altura">Altura (m):</label>
-        <input type="number" id="altura" name="altura" step="0.01" required>
-      </div>
-    </form>
-    
-    <div class="botoes">
-    <button class="botoes-form" onclick="calcularImc()" type="submit" id="calcular">Calcular</button>
-    <button class="botoes-form"  onclick="zerar()" type="submit" id="zerar">Zerar</button>
+      <h2>Tabela de Classificação do IMC:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>IMC</th>
+          <th>Classificação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="magreza">
+          <td class="tipo-classificacao">Menor que 18,5</td>
+          <td>Magreza</td>
+        </tr>
+        <tr id="normal">
+          <td class="tipo-classificacao">18,5 a 24,9</td>
+          <td>Normal</td>
+        </tr>
+        <tr id="sobrepeso">
+          <td class="tipo-classificacao">25 a 29,9</td>
+          <td>Sobrepeso</td>
+        </tr>
+        <tr id="obesidade1">
+          <td class="tipo-classificacao">30 a 34,9</td>
+          <td>Obesidade grau I</td>
+        </tr>
+        <tr id="obesidade2">
+          <td class="tipo-classificacao">35 a 39,9</td>
+          <td>Obesidade grau II</td>
+        </tr>
+        <tr id="obesidade3">
+          <td class="tipo-classificacao">Maior que 40</td>
+          <td>Obesidade grau III</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
-
-    <div id="resultado-container">
-      <h3>Resultado:</h3>
-      <p id="resultado"></p>
-    </div>
-
-     <h2>Tabela de Classificação do IMC:</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>IMC</th>
-        <th>Classificação</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr id="magreza">
-        <td class="tipo-classificacao">Menor que 18,5</td>
-        <td>Magreza</td>
-      </tr>
-      <tr id="normal">
-        <td class="tipo-classificacao">18,5 a 24,9</td>
-        <td>Normal</td>
-      </tr>
-      <tr id="sobrepeso">
-        <td class="tipo-classificacao">25 a 29,9</td>
-        <td>Sobrepeso</td>
-      </tr>
-      <tr id="obesidade1">
-        <td class="tipo-classificacao">30 a 34,9</td>
-        <td>Obesidade grau I</td>
-      </tr>
-      <tr id="obesidade2">
-        <td class="tipo-classificacao">35 a 39,9</td>
-        <td>Obesidade grau II</td>
-      </tr>
-      <tr id="obesidade3">
-        <td class="tipo-classificacao">Maior que 40</td>
-        <td>Obesidade grau III</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+  </section>
+  
 
   <script src="scripts/cabecalho.js"></script>
   <script src="scripts/alternarConteudo.js"></script>
