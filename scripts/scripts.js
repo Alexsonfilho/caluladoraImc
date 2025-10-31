@@ -1,3 +1,21 @@
+const form = document.getElementById("form-imc");
+const btnCalcular = document.getElementById("calcular");
+const btnZerar = document.getElementById("zerar");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    calcularImc();
+    btnCalcular.disabled = true;
+    btnCalcular.hidden = true;
+
+})
+
+btnZerar.addEventListener("click", () => {
+    zerar();
+    btnCalcular.disabled = false;
+    btnCalcular.hidden = false;
+})
+
 function calcularImc () {
     let altura = document.getElementById("altura").value;
     let peso = document.getElementById("peso").value;
@@ -21,41 +39,40 @@ function calcularImc () {
     let msg;
     if (imc < 18.5) {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Magreza.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("magreza").classList.add("destacado-vermelho");
     } else if (imc >= 18.5 && imc < 25) {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Normal.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("normal").classList.add("destacado-verde");
     } else if (imc >= 25 && imc < 30) {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Sobrepeso.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("sobrepeso").classList.add("destacado-vermelho");
     } else if (imc >= 30 && imc < 35) {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Obesidade I.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("obesidade1").classList.add("destacado-vermelho");
     } else if (imc >= 35 && imc < 40) {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Obesidade II.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("obesidade2").classList.add("destacado-vermelho");
     } else {
         msg = `Olá, senhor(a): ${nome}. Seu IMC é de ${imc}KG/M², classificação: Obesidade III.`;
-        exibirMensagem("p", msg);
+        exibirMensagem("resultado", msg);
 
         document.getElementById("obesidade3").classList.add("destacado-vermelho");
     }
 
-
 }
 
-function exibirMensagem (tag, texto){
-    let campo = document.querySelector(tag);
+function exibirMensagem (id, texto){
+    let campo = document.getElementById(id);
     campo.innerHTML = texto
 }
 
