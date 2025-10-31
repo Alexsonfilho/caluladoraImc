@@ -1,3 +1,21 @@
+const form = document.getElementById("form-imc");
+const btnCalcular = document.getElementById("calcular");
+const btnZerar = document.getElementById("zerar");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    calcularImc();
+    btnCalcular.disabled = true;
+    btnCalcular.hidden = true;
+
+})
+
+btnZerar.addEventListener("click", () => {
+    zerar();
+    btnCalcular.disabled = false;
+    btnCalcular.hidden = false;
+})
+
 function calcularImc () {
     let altura = document.getElementById("altura").value;
     let peso = document.getElementById("peso").value;
@@ -50,7 +68,6 @@ function calcularImc () {
 
         document.getElementById("obesidade3").classList.add("destacado-vermelho");
     }
-
 
 }
 
