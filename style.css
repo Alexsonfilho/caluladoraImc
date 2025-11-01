@@ -1,6 +1,7 @@
 @import url("css/cabecalho.css");
 @import url("css/conteudo.css");
 @import url("css/calculadora.css");
+@import url("css/footer.css");
 
 :root {
   --cor-de-fundo: #f7f7f7; 
