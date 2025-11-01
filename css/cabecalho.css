@@ -14,8 +14,9 @@
   background-color: white;
 }
 
-
 .cabecalho-titulo {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
   text-align: center;
   padding-top: 0.5em
 }
@@ -36,6 +37,8 @@
 }
 
 .lista-item-botao {
+  font-weight: 600;
+  font-size: 18px;
   text-decoration: none;
   border: none;
   background-color: transparent;

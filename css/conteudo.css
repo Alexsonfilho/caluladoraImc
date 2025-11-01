@@ -5,6 +5,12 @@
     margin: 0 8vw 0 8vw;
 }
 
+.imc-titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 21px;
+    font-style: italic;
+}
+
 .imc-paragrafo {
     margin-top: 1em;
     line-height: 1.6; /*altura da linha */

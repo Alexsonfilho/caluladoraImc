@@ -2,8 +2,11 @@
 @import url("css/conteudo.css");
 @import url("css/calculadora.css");
 @import url("css/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montsserat", sans-serif;
   --cor-de-fundo: #f7f7f7; 
   --verde-escuro: #215024;
   --verde-claro: #4CAF50;
@@ -15,18 +18,15 @@
   --sombra: rgba(12, 11, 11, 0.15);
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
 }
 
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
   background-color: var(--cor-de-fundo);
-  
 }
 
 .apresentacao {
@@ -35,5 +35,4 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }

@@ -31,7 +31,7 @@ function alterarConteudo (conteudo) {
     imcImagem.setAttribute('src', `imagens/${conteudo}.png`);
     switch(conteudo) {
         case "duvida-01":
-            imcConteudo.innerHTML= `<h2>O que é IMC?</h2>
+            imcConteudo.innerHTML= `<h2 class="imc-titulo">O que é IMC?</h2>
            <p class="imc-paragrafo">O IMC, ou Índice de Massa Corporal, é uma ferramenta usada por profissionais da saúde para estimar a quantidade de gordura corporal a partir da avaliação da relação entre peso e altura. O IMC serve como uma avaliação inicial para verificar se a pessoa está no peso adequado ou se está acima ou abaixo do peso ideal.</p>
 
           <p class="imc-paragrafo">Apesar de ser uma ferramenta prática e muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva em consideração a proporção entre músculo e gordura, a distribuição de gordura no corpo e o condicionamento físico da pessoa.</p>
@@ -42,15 +42,15 @@ function alterarConteudo (conteudo) {
             
         case "duvida-02":
             imcConteudo.innerHTML= `
-            <h2>Como Fazer o Calculo?</h2>
+            <h2 class="imc-titulo">Como Fazer o Calculo?</h2>
             <p class="imc-paragrafo">O cálculo do IMC é feito usando a seguinte fórmula: peso (kg) ÷ (altura x altura) (m).</p>
             <p class="imc-paragrafo">Para calcular o IMC, deve-se:</p>
             <ul>
-                <li class="item-lista"><strong>Pesar a pessoa</strong> e anotar o peso em Kg;</li>
-                <li class="item-lista"><strong>Medir a altura</strong> em metros;</li>
-                <li class="item-lista"><strong>Elevar a altura ao quadrado</strong>, ou seja, multiplicar por ela mesma;</li>
-                <li class="item-lista"><strong>Dividir o peso pela altura ao quadrado;</strong></li>
-                <li class="item-lista"><strong>Classificar o resultado do IMC</strong> a partir do valor obtido.</li>
+                <li class="item-lista imc-paragrafo"><strong>Pesar a pessoa</strong> e anotar o peso em Kg;</li>
+                <li class="item-lista imc-paragrafo"><strong>Medir a altura</strong> em metros;</li>
+                <li class="item-lista imc-paragrafo"><strong>Elevar a altura ao quadrado</strong>, ou seja, multiplicar por ela mesma;</li>
+                <li class="item-lista imc-paragrafo"><strong>Dividir o peso pela altura ao quadrado;</strong></li>
+                <li class="item-lista imc-paragrafo"><strong>Classificar o resultado do IMC</strong> a partir do valor obtido.</li>
             </ul>
             `
             
@@ -58,7 +58,7 @@ function alterarConteudo (conteudo) {
 
         case "duvida-03": 
             imcConteudo.innerHTML= `
-            <h2>Como melhorar o IMC?</h2>
+            <h2 class="imc-titulo">Como melhorar o IMC?</h2>
             <p class="imc-paragrafo">Para melhorar o IMC, é importante verificar se está acima ou abaixo do peso considerado normal. Quando o IMC está na faixa de magreza, é importante consultar um nutricionista que fará uma avaliação completa, indicando um plano alimentar personalizado que priorize o ganho de peso de forma saudável. </p>
             <p class="imc-paragrafo">Por outro lado, quando o IMC está na faixa do sobrepeso ou da obesidade, o nutricionista pode recomendar uma alimentação com redução de calorias. Além da dieta, normalmente também se recomenda a prática de atividade física regular, que ajudará a acelerar o metabolismo e facilitar a perda de peso, o que influencia diretamente no IMC.</p> 
             `
